@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Nex Packs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contener">
+        <h1>Welcome!</h1>
+        <p>Hi, im Nex also known as "NexFlux" And this is my website.</p>
+		<p>I'm doing many things such as making videogames, minecaft mods and modpacks,</p>
+		<p>digital arts, and youtube videos!</p>
+		<p>If you are interested in my work, take a look around.</p>
+        
+		<div class="slider-container">
+    <div class="slide"><img src="img1.png" alt="img1"></div>
+    <div class="slide"><img src="img2.png" alt="img2"></div>
+    <div class="slide"><img src="img3.png" alt="img3"></div>
+		<p>Dowlnoad</p>
+</div>
+
+		
+		<div class="imgBlock">
+            <img src="image1.png" alt="label1">
+            <p>Podpis pod zdjęciem pierwszym</p>
+        </div>
+
+        <div class="imgBlock">
+            <img src="background.png" alt="label2">
+            <p>Podpis pod zdjęciem drugim</p>
+        </div>
+    </div>
+	
+</body>
+
+<script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+    
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");  
+    }
+    
+    // go to next slide
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    
+    slides[slideIndex-1].classList.add("active");  
+    
+    // repeat after 5 seconds
+    setTimeout(showSlides, 5000); 
+}
+</script>
+
+</html>
