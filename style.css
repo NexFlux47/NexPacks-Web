@@ -13,7 +13,7 @@ body {
 .contener {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 50px;
-    min-height: 100vh;
+    min-height: 25vh;
 }
 
 .imgBlock {
@@ -43,11 +43,11 @@ img {
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: opacity 1s ease-in-out; /* smooth fade 1 sec */
+    transition: opacity 1s ease-in-out;
 }
 
 .slide.active {
-    opacity: 1; /* Widoczne */
+    opacity: 1;
 }
 
 .slide img {
